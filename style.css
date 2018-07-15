@@ -5,6 +5,11 @@ body, html{
     color: whitesmoke;
 }
 
+hr{
+    opacity: 0.5;
+    margin: 2em 0;
+}
+
 .nav{
     width: calc(20vw - 5em);
     position: fixed;
@@ -21,7 +26,8 @@ body, html{
 }
 
 .content{
-    margin: 12px;
+    width: 75%;
+    margin-left: 12px;
 }
 
 .main-title{
@@ -59,8 +65,83 @@ body, html{
     transition: background-color 1s, color 1s, font-style 1s;
 }
 
-.nav-items .nav-link:hover{
+.nav-link:hover{
     background-color: whitesmoke;
     color: #252525;
     font-style: italic;
 }
+
+.mdl-layout__header, .mdl-layout__drawer{
+    background-color: #252525;
+    color: whitesmoke;
+    border: none;
+    box-shadow: none;
+}
+
+.mdl-layout__drawer{
+    width: 22.5%
+}
+
+.mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title{
+    line-height: 42px;
+    padding-left: 24px;
+    font-size: 35px;
+    margin: 64px 0 24px 0;
+    font-weight: bold;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+    font-size: 24px;
+    padding-left: 24px;
+    color: whitesmoke;
+}
+
+.mdl-layout--fixed-drawer>.mdl-layout__content{
+    margin-left: 22.5%;
+}
+
+/*.mdl-layout__drawer .mdl-navigation{*/
+    /*-webkit-flex-direction: unset;*/
+    /*flex-direction: unset;*/
+/*}*/
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover{
+    background: none;
+}
+
+.content-title{
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.content-subtitle{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.content p, .content li{
+    font-size: 1.25em;
+}
+
+a#main-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*@media (max-width: 1200px) {*/
+    /*.nav{*/
+        /*width: 250px;*/
+        /*position: fixed;*/
+        /*height: 100vh;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*margin: 2.5em;*/
+    /*}*/
+
+    /*.main{*/
+        /*width: calc(100vw - 250px - 5em);*/
+        /*margin: 2.5em;*/
+        /*margin-left: calc(250px + 5em);*/
+    /*}*/
+/*}*/
